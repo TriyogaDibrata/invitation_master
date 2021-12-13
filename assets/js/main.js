@@ -243,18 +243,18 @@
 
     const curent_icon = icon.getAttribute('class');
     
-    if(curent_icon === 'bi bi-volume-up-fill') {
-      icon.setAttribute('class', 'bi bi-volume-mute-fill');
-      audio.muted = true;
+    if(curent_icon === 'bi bi-pause-fill') {
+      icon.setAttribute('class', 'bi bi-play-fill');
+      audio.pause();
     } else {
-      icon.setAttribute('class', 'bi bi-volume-up-fill');
-      audio.muted = false;
+      icon.setAttribute('class', 'bi bi-pause-fill');
+      audio.play();
     }
   });
   
   video_btn.addEventListener('click', () => {
-    icon.setAttribute('class', 'bi bi-volume-mute-fill');
-    audio.muted = true;
+    icon.setAttribute('class', 'bi bi-play-fill');
+    audio.pause();
   })
   
   
@@ -321,27 +321,27 @@
     },
     {
       name : '13',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/13.jpeg',
       class : ''
     },
     {
       name : '14',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/14.jpeg',
       class : ''
     },
     {
       name : '15',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/15.jpeg',
       class : ''
     },
     {
       name : '16',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/16.jpeg',
       class : ''
     },
     {
       name : '17',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/17.jpeg',
       class : ''
     },
   ];
