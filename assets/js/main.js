@@ -235,9 +235,8 @@
     audio.loop = true;
   });
   
-  
   const icon = document.getElementById('audio-icon');
-  const video_btn = document.getElementById('video-btn');
+  // const video_btn = document.getElementById('video-btn');
   $('#audio-btn').click(function() {
     // var icon = $("i", this).toggleClass("bi bi-volume-up-fill bi bi-volume-mute-fill");
 
@@ -252,96 +251,101 @@
     }
   });
   
-  video_btn.addEventListener('click', () => {
-    icon.setAttribute('class', 'bi bi-play-fill');
-    audio.pause();
-  })
+  // video_btn.addEventListener('click', () => {
+  //   icon.setAttribute('class', 'bi bi-play-fill');
+  //   audio.pause();
+  // })
   
   
   var galleries = [
     {
       name : '1',
-      url : 'assets/img/gallery/1.jpeg',
+      url : 'assets/img/gallery/1.jpg',
       class : 'active'
     },
     {
       name : '2',
-      url : 'assets/img/gallery/2.jpeg',
+      url : 'assets/img/gallery/2.jpg',
       class : ''
     },
     {
       name : '3',
-      url : 'assets/img/gallery/3.jpeg',
+      url : 'assets/img/gallery/3.jpg',
       class : ''
     },
     {
       name : '4',
-      url : 'assets/img/gallery/4.jpeg',
+      url : 'assets/img/gallery/4.jpg',
       class : ''
     },
     {
       name : '5',
-      url : 'assets/img/gallery/5.jpeg',
+      url : 'assets/img/gallery/5.jpg',
       class : ''
     },
     {
       name : '6',
-      url : 'assets/img/gallery/6.jpeg',
+      url : 'assets/img/gallery/6.jpg',
       class : ''
     },
     {
       name : '7',
-      url : 'assets/img/gallery/7.jpeg',
+      url : 'assets/img/gallery/7.jpg',
       class : ''
     },
     {
       name : '8',
-      url : 'assets/img/gallery/8.jpeg',
+      url : 'assets/img/gallery/8.jpg',
       class : ''
     },
     {
       name : '9',
-      url : 'assets/img/gallery/9.jpeg',
+      url : 'assets/img/gallery/9.jpg',
       class : ''
     },
     {
       name : '10',
-      url : 'assets/img/gallery/10.jpeg',
+      url : 'assets/img/gallery/10.jpg',
       class : ''
     },
     {
       name : '11',
-      url : 'assets/img/gallery/11.jpeg',
+      url : 'assets/img/gallery/11.jpg',
       class : ''
     },
     {
       name : '12',
-      url : 'assets/img/gallery/12.jpeg',
+      url : 'assets/img/gallery/12.jpg',
       class : ''
     },
     {
       name : '13',
-      url : 'assets/img/gallery/13.jpeg',
+      url : 'assets/img/gallery/13.jpg',
       class : ''
     },
     {
       name : '14',
-      url : 'assets/img/gallery/14.jpeg',
+      url : 'assets/img/gallery/14.jpg',
       class : ''
     },
     {
       name : '15',
-      url : 'assets/img/gallery/15.jpeg',
+      url : 'assets/img/gallery/15.jpg',
       class : ''
     },
     {
       name : '16',
-      url : 'assets/img/gallery/16.jpeg',
+      url : 'assets/img/gallery/16.jpg',
       class : ''
     },
     {
       name : '17',
-      url : 'assets/img/gallery/17.jpeg',
+      url : 'assets/img/gallery/17.jpg',
+      class : ''
+    },
+    {
+      name : '18',
+      url : 'assets/img/gallery/18.jpg',
       class : ''
     },
   ];
@@ -387,13 +391,17 @@
 
         //do something later when date is reached
         if (distance < 0) {
-          let headline = document.getElementById("headline"),
-              countdown = document.getElementById("countdown"),
-              content = document.getElementById("content");
+          // let headline = document.getElementById("headline"),
+          //     countdown = document.getElementById("countdown"),
+          //     content = document.getElementById("content");
 
-          headline.innerText = "It's my birthday!";
-          countdown.style.display = "none";
-          content.style.display = "block";
+          // headline.innerText = "It's my birthday!";
+          // countdown.style.display = "none";
+          // content.style.display = "block";
+          document.getElementById("days").innerText = "00";
+          document.getElementById("hours").innerText = "00";
+          document.getElementById("minutes").innerText = "00";
+          document.getElementById("seconds").innerText = "00";
 
           clearInterval(x);
         }
